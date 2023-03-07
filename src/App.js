@@ -12,6 +12,7 @@ import {
   faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import emailjs from '@emailjs/browser';
 
 function App() {
   const contact = (event) => {
@@ -21,23 +22,23 @@ function App() {
     event.preventDefault();
 
     loading.classList += " modal__overlay--visible";
-    // emailjs
-    //   .sendForm(
-    //     "service_iw14wxo",
-    //     "template_ahkrqok",
-    //     event.target,
-    //     "INM3kekNo10VyVuuF"
-    //   )
-    //   .then(() => {
-    //     loading.classList.remove("modal__overlay--visible");
-    //     success.classList += " modal__overlay--visible";
-    //   })
-    //   .catch(() => {
-    //     loading.classList.remove("modal__loading--visible");
-    //     alert(
-    //       "The email service is temporarily unavailable. Please reach me directly at teanmi6@gmail.com."
-    //     );
-    //   });
+    emailjs
+      .sendForm(
+        "service_iw14wxo",
+        "template_ahkrqok",
+        event.target,
+        "INM3kekNo10VyVuuF"
+      )
+      .then(() => {
+        loading.classList.remove("modal__overlay--visible");
+        success.classList += " modal__overlay--visible";
+      })
+      .catch(() => {
+        loading.classList.remove("modal__loading--visible");
+        alert(
+          "The email service is temporarily unavailable. Please reach me directly at teanmi6@gmail.com."
+        );
+      });
   };
 
   const toggleModal = () => {
@@ -144,7 +145,11 @@ function App() {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
 
-              <a href="" className="about-me__link click">
+              <a
+                target="_blank"
+                href="../images/RESUME.pdf"
+                className="about-me__link click"
+              >
                 <FontAwesomeIcon icon={faFilePdf} />
               </a>
             </div>
@@ -517,7 +522,8 @@ function App() {
               </a>
 
               <a
-                href="#"
+                target="_blank"
+                href="../images/RESUME.pdf"
                 className="footer__social--link link__hover-effect link__hover-effect--white"
               >
                 Resume
