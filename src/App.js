@@ -12,7 +12,7 @@ import {
   faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 function App() {
   const contact = (event) => {
@@ -169,10 +169,10 @@ function App() {
             </h4>
             <p className="modal__para">
               I'm a <span className="purple">frontend developer</span> with a
-              strong desire to develop websites that can easily be used
+              strong desire to develop websites that can easily be used{" "}
               <span className="purple">by all.</span>
               <br />I currently take on challenging tasks and learn from these
-              experiences to become a more
+              experiences to become a more{" "}
               <span className="purple">experienced</span> software enginner.
             </p>
             <div className="modal__languages">

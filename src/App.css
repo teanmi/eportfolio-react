@@ -353,7 +353,7 @@ li {
 
 .modal__sub-title {
   margin: 12px 0 24px 0;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .modal__para {
@@ -687,6 +687,10 @@ footer {
     width: 100%;
     flex-direction: column-reverse;
     border-radius: 0;
+  }
+
+  .modal__language img {
+    width: 70%;
   }
 
   .modal__half {
