@@ -67,6 +67,7 @@ function App() {
 
   return (
     <div id="body" onMouseMove={(event) => moveBackground(event)}>
+      
       <a href="#landing-page">
         <button className="mail__btn click" onClick={() => toggleModal()}>
           <FontAwesomeIcon icon={faEnvelope} />
@@ -147,7 +148,7 @@ function App() {
 
               <a
                 target="_blank"
-                href="../images/RESUME.pdf"
+                href="../images/MTELAKOWICZ_RESUME.pdf"
                 className="about-me__link click"
               >
                 <FontAwesomeIcon icon={faFilePdf} />
