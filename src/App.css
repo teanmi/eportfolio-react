@@ -121,6 +121,7 @@ nav,
   transition: visible 400ms, opactiy 400ms;
 }
 
+
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
@@ -730,5 +731,53 @@ footer {
 
   .modal__half {
     padding: 40px;
+  }
+}
+
+@media screen and (max-height: 1000px ) and (max-width: 768px)  {
+  #landing-page {
+    min-height: 110vh;
+  }
+}
+
+@media screen and (max-height: 900px ) and (max-width: 768px)  {
+  #landing-page {
+    min-height: 115vh;
+  }
+}
+
+@media screen and (max-height: 850px ) and (max-width: 768px)  {
+  #landing-page {
+    min-height: 120vh;
+  }
+}
+
+@media screen and (max-height: 810px ) and (max-width: 768px)  {
+  #landing-page {
+    min-height: 125vh;
+  }
+}
+
+@media screen and (max-height: 1000px ) and (max-width: 768px)  {
+  #landing-page {
+    min-height: 110vh;
+  }
+}
+
+@media screen and (max-height: 900px ) and (max-width: 768px)  {
+  #landing-page {
+    min-height: 115vh;
+  }
+}
+
+@media screen and (max-height: 850px ) and (max-width: 768px)  {
+  #landing-page {
+    min-height: 120vh;
+  }
+}
+
+@media screen and (max-height: 810px ) and (max-width: 768px)  {
+  #landing-page {
+    min-height: 125vh;
   }
 }

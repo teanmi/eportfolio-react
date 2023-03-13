@@ -67,7 +67,6 @@ function App() {
 
   return (
     <div id="body" onMouseMove={(event) => moveBackground(event)}>
-      
       <a href="#landing-page">
         <button className="mail__btn click" onClick={() => toggleModal()}>
           <FontAwesomeIcon icon={faEnvelope} />
