@@ -179,45 +179,45 @@ function App() {
               <figure className="modal__language">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                  alt=""
+                  alt="HTML"
                 />
                 <span className="language__name">HTML</span>
               </figure>
               <figure className="modal__language">
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-                  alt=""
+                  alt="CSS"
                 />
                 <span className="language__name">CSS</span>
               </figure>
               <figure className="modal__language">
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-                  alt=""
+                  alt="JavaScript"
                 />
                 <span className="language__name">JavaScript</span>
               </figure>
               <figure className="modal__language">
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-                  alt=""
+                  alt="React"
                 />
                 <span className="language__name">React</span>
               </figure>
               <figure className="modal__language">
-                <img src="./images/typescript.png" alt="" />
+                <img src="./images/typescript.png" alt="TypeScript" />
                 <span className="language__name">TypeScript</span>
               </figure>
               <figure className="modal__language">
-                <img src="./images/sass.png" alt="" />
+                <img src="./images/sass.png" alt="SASS" />
                 <span className="language__name">SASS</span>
               </figure>
               <figure className="modal__language">
-                <img src="./images/tailwind.png" alt="" />
+                <img src="./images/tailwind.png" alt="Tailwind" />
                 <span className="language__name">Tailwind</span>
               </figure>
               <figure className="modal__language">
-                <img src="./images/nextjs.svg" alt="" />
+                <img src="./images/nextjs.svg" alt="Next.js" />
                 <span className="language__name">Next.js</span>
               </figure>
             </div>
@@ -303,7 +303,7 @@ function App() {
                   <img
                     src="./images/gamemart.png"
                     className="project__mockup"
-                    alt=""
+                    alt="Gamemart"
                   />
                   <div className="project__wrapper--bg"></div>
                   <div className="project__description">
@@ -341,7 +341,7 @@ function App() {
                   <img
                     src="./images/twitter.png"
                     className="project__mockup"
-                    alt=""
+                    alt="Twitter Clone"
                   />
                   <div className="project__wrapper--bg"></div>
                   <div className="project__description">
@@ -380,7 +380,7 @@ function App() {
                   <img
                     src="./images/linkedin.png"
                     className="project__mockup"
-                    alt=""
+                    alt="LinkedIn Clone"
                   />
                   <div className="project__wrapper--bg"></div>
                   <div className="project__description">
@@ -419,7 +419,7 @@ function App() {
                   <img
                     src="./images/google.png"
                     className="project__mockup"
-                    alt=""
+                    alt="Google Clone"
                   />
                   <div className="project__wrapper--bg"></div>
                   <div className="project__description">
@@ -458,7 +458,7 @@ function App() {
                   <img
                     src="./images/wordsearch.png"
                     className="project__mockup"
-                    alt=""
+                    alt="WordSearch"
                   />
                   <div className="project__wrapper--bg"></div>
                   <div className="project__description">
