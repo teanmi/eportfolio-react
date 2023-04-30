@@ -299,6 +299,44 @@ function App() {
             </h1>
             <ul className="project__list">
               <li className="project">
+                <div className="project__wrapper project__wrapper--space-model">
+                  <img
+                    src="./images/space-model.png"
+                    className="project__mockup"
+                    alt="Gamemart"
+                  />
+                  <div className="project__wrapper--bg"></div>
+                  <div className="project__description">
+                    <h3 className="project__description--title">Space Model</h3>
+                    <h4 className="project__description--sub-title">
+                      Html, CSS, JS, React, Three.js
+                    </h4>
+                    <p className="project__description--para">
+                      A responsive, react user interface that uses Three.js to
+                      make a model of the Milky Way Galaxy. Can travel to each
+                      planet with smooth transitions and get a description about
+                      it from an API.
+                    </p>
+                    <div className="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://github.com/teanmi/space-model"
+                        className="project__description--link"
+                      >
+                        <FontAwesomeIcon icon={faGithub} />
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://space-model.web.app/"
+                        className="project__description--link"
+                      >
+                        <FontAwesomeIcon icon={faLink} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="project">
                 <div className="project__wrapper">
                   <img
                     src="./images/gamemart.png"

@@ -529,7 +529,7 @@ li {
   overflow: hidden;
 }
 
-.project__wrapper--twitter {
+.project__wrapper--twitter, .project__wrapper--space-model {
   background-color: black;
 }
 
@@ -576,6 +576,7 @@ li {
 
 .project__description--para {
   margin: 16px 0;
+  width: 80%;
   line-height: 1.5;
 }
 
