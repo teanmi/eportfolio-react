@@ -33,10 +33,11 @@ function App() {
         loading.classList.remove("modal__overlay--visible");
         success.classList += " modal__overlay--visible";
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log(error);
         loading.classList.remove("modal__loading--visible");
         alert(
-          "The email service is temporarily unavailable. Please reach me directly at teanmi6@gmail.com."
+          "The email service is temporarily unavailable. Please reach me directly at michael@mtelakowicz.com"
         );
       });
   };
@@ -120,9 +121,9 @@ function App() {
             <h1 className="title">Hey</h1>
             <h1 className="title second--title purple">I'm Michael.</h1>
             <p className="header__para">
-              I'm a <span className="purple">Frontend Developer</span> with a
-              desire to create great websites to spark a positive experience for
-              users.
+              I'm a <span className="purple">Full-Stack Developer</span> driven
+              by a passion for crafting exceptional websites that cultivate a
+              positive user experience.
               <br />
               Here is some more
               <span className="purple ml4 click" onClick={() => toggleModal()}>
@@ -165,15 +166,16 @@ function App() {
               Here's a bit about me.
             </h3>
             <h4 className="modal__sub-title modal__sub-title--about">
-              Frontend Software Engineer
+              Full-Stack Software Engineer
             </h4>
             <p className="modal__para">
-              I'm a <span className="purple">frontend developer</span> with a
-              strong desire to develop websites that can easily be used{" "}
-              <span className="purple">by all.</span>
-              <br />I currently take on challenging tasks and learn from these
-              experiences to become a more{" "}
-              <span className="purple">experienced</span> software enginner.
+              I'm a <span className="purple">full-stack developer</span> with a
+              strong desire to contiue learning more in the field.
+              <br />
+              I'm currently in college at the{" "}
+              <span className="purple">University of Akron</span> while working
+              part-time as a full-stack developer. Everyday I am continuing to
+              learn and grow as a <span className="purple">developer</span>.
             </p>
             <div className="modal__languages">
               <figure className="modal__language">
@@ -300,30 +302,81 @@ function App() {
             <ul className="experience__list">
               <div className="experience__wrapper">
                 <li className="experience">
-                  <h4 id="frontendSimplified" className="experience__company open-sans"><span className="lilita">&lt;<span className="pacifico">/</span>&gt;</span> <span><span className="bold">Frontend</span> Simplified</span></h4>
+                  <h4
+                    id="frontendSimplified"
+                    className="experience__company open-sans"
+                  >
+                    <span className="lilita">
+                      &lt;<span className="pacifico">/</span>&gt;
+                    </span>{" "}
+                    <span>
+                      <span className="bold">Frontend</span> Simplified
+                    </span>
+                  </h4>
                   <ul>
-                    <li className="experience__title">Front-End Developer Intern</li>
-                    <li className="experience__technologies"><span className="experience__technologies--title">Technologies:</span> HTML, CSS, JS, React.js</li>
+                    <li className="experience__title">
+                      Front-End Developer Intern
+                    </li>
+                    <li className="experience__technologies">
+                      <span className="experience__technologies--title">
+                        Technologies:
+                      </span>{" "}
+                      HTML, CSS, JS, React.js
+                    </li>
                     <li className="experience__date">Sep 2022 - Feb 2023</li>
                   </ul>
                 </li>
               </div>
               <div className="experience__wrapper">
                 <li className="experience">
-                  <div id="prcSaltillo" className="experience__company open-sans"><img id="prcSaltillo__logo" src="./images/PRC-Saltillo_Logo-modified.png" alt="logo" />prc-saltillo</div>
+                  <div
+                    id="prcSaltillo"
+                    className="experience__company open-sans"
+                  >
+                    <img
+                      id="prcSaltillo__logo"
+                      src="./images/PRC-Saltillo_Logo-modified.png"
+                      alt="logo"
+                    />
+                    prc-saltillo
+                  </div>
                   <ul>
-                    <li className="experience__title">Full-Stack Developer Intern</li>
-                    <li className="experience__technologies"><span className="experience__technologies--title">Technologies:</span> HTML, Tailwind, JS, Vue.js, PHP, Laravel</li>
+                    <li className="experience__title">
+                      Full-Stack Developer Intern
+                    </li>
+                    <li className="experience__technologies">
+                      <span className="experience__technologies--title">
+                        Technologies:
+                      </span>{" "}
+                      HTML, Tailwind, JS, Vue.js, PHP, Laravel
+                    </li>
                     <li className="experience__date">Jul 2023 - Aug 2023</li>
                   </ul>
                 </li>
               </div>
               <div className="experience__wrapper">
                 <li className="experience">
-                <div id="codehouseSolutions" className="experience__company poppins"><img id="codehouse__logo" src="./images/Code_House_Solutions_Logo.jpg" alt="logo" />CODEHOUSE SOLUTIONS</div>
+                  <div
+                    id="codehouseSolutions"
+                    className="experience__company poppins"
+                  >
+                    <img
+                      id="codehouse__logo"
+                      src="./images/Code_House_Solutions_Logo.jpg"
+                      alt="logo"
+                    />
+                    CODEHOUSE SOLUTIONS
+                  </div>
                   <ul>
-                    <li className="experience__title">Full-Stack Developer Intern</li>
-                    <li className="experience__technologies"><span className="experience__technologies--title">Technologies:</span> HTML, Tailwind, TS, React.js, Next.js, AWS</li>
+                    <li className="experience__title">
+                      Full-Stack Developer Intern
+                    </li>
+                    <li className="experience__technologies">
+                      <span className="experience__technologies--title">
+                        Technologies:
+                      </span>{" "}
+                      HTML, Tailwind, TS, React.js, Next.js, AWS
+                    </li>
                     <li className="experience__date">Jun 2023 - Current</li>
                   </ul>
                 </li>
@@ -354,10 +407,12 @@ function App() {
                       Html, CSS, JS, React, Three.js
                     </h4>
                     <p className="project__description--para">
-                      A responsive, react user interface that uses Three.js to
-                      make a model of the Milky Way Galaxy. Can travel to each
-                      planet with smooth transitions and get a description about
-                      it from an API.
+                      I created a 3D model of the Milky Way galaxy using
+                      React.js and Three.js, making it visually appealing with
+                      smooth transitions thanks to Tween.js. Additionally, I
+                      enriched the experience by fetching detailed planet
+                      descriptions from an API, adding an educational touch to
+                      the project
                     </p>
                     <div className="project__description--links">
                       <a
@@ -392,10 +447,13 @@ function App() {
                       Html, CSS, JS, React, Redux
                     </h4>
                     <p className="project__description--para">
-                      A multi page video game ecommerse website. Uses React
-                      Redux to store values in a cart that saves after leaving
-                      the store. Fetches video game data from an API and
-                      displays it dynamically on the page.
+                      I designed a comprehensive React-based multi-page website
+                      for a video game eCommerce store. The website boasted
+                      user-friendly features such as a search bar for easy game
+                      discovery and an integrated shopping cart. Leveraging API
+                      calls, I dynamically fetched and displayed video game
+                      data, ensuring an engaging and seamless shopping
+                      experience for users.
                     </p>
                     <div className="project__description--links">
                       <a
@@ -432,9 +490,10 @@ function App() {
                       Html, CSS, JS, React, Firebase
                     </h4>
                     <p className="project__description--para">
-                      A dark mode clone of the twitter website that is fully
-                      responsive. Uses firebase to load posts that any user has
-                      posted.
+                      I developed a fully responsive dark mode adaptation of
+                      Twitter using React.js. Leveraging Firebase, I implemented
+                      a dynamic posting system that allows anyone to share their
+                      thoughts with a global audience.
                     </p>
                     <div className="project__description--links">
                       <a
@@ -471,9 +530,14 @@ function App() {
                       Html, CSS, JS, React, Firebase
                     </h4>
                     <p className="project__description--para">
-                      A LinkedIn Clone that uses Firebase Authentication to
-                      store your data. Can create posts that will save in
-                      Firebase Storage and display when website is loaded.
+                      I crafted a LinkedIn Clone using React and Firebase,
+                      offering users the choice of secure Gmail login or guest
+                      access. The platform seamlessly integrates with Gmail
+                      profiles, displaying users' profile pictures for a
+                      personalized experience. Furthermore, I implemented the
+                      ability to share video content alongside traditional
+                      posts, enhancing engagement and user interaction within
+                      this professional networking platform.
                     </p>
                     <div className="project__description--links">
                       <a
@@ -504,15 +568,18 @@ function App() {
                   <div className="project__wrapper--bg"></div>
                   <div className="project__description">
                     <h3 className="project__description--title">
-                      Google Mockup
+                      Google Clone
                     </h3>
                     <h4 className="project__description--sub-title">
                       Html, CSS, JavaScript, React
                     </h4>
                     <p className="project__description--para">
-                      A clone of the google search engine. Uses the google
-                      search API to load results that the user has entered in
-                      and dynamically displays the data.
+                      I engineered a Google Clone using React that harnesses the
+                      power of Google's own API. This intuitive platform
+                      empowers users to perform real-time searches on their
+                      chosen topics, providing instant access to Google's search
+                      results and information, all within a streamlined and
+                      responsive interface.
                     </p>
                     <div className="project__description--links">
                       <a
@@ -547,9 +614,12 @@ function App() {
                       Html, CSS, JavaScript
                     </h4>
                     <p className="project__description--para">
-                      Multi page dictionary service that fetches data from an
-                      API to display word entered in from user. Responsive for
-                      all devices and features loading states.
+                      I developed a Dictionary API using vanilla JavaScript that
+                      offers a user-friendly experience. With a thoughtful
+                      loading state, this tool enables users to search for words
+                      and promptly receive comprehensive lists of definitions,
+                      enhancing their language comprehension and communication
+                      skills.
                     </p>
                     <div className="project__description--links">
                       <a
@@ -603,7 +673,7 @@ function App() {
 
               <a
                 target="_blank"
-                href="../images/RESUME.pdf"
+                href="../images/MTELAKOWICZ_RESUME.pdf"
                 className="footer__social--link link__hover-effect link__hover-effect--white"
               >
                 Resume
