@@ -291,11 +291,53 @@ function App() {
         <img src="./images/circle.svg" className="shape shape--7" />
         <img src="./images/semi circle.svg" className="shape shape--8" />
       </section>
+      <section id="experience">
+        <div className="container">
+          <div className="row">
+            <h1 className="section__title">
+              Professional <span className="purple">Experience</span>
+            </h1>
+            <ul className="experience__list">
+              <div className="experience__wrapper">
+                <li className="experience">
+                  <h4 id="frontendSimplified" className="experience__company open-sans"><span className="lilita">&lt;<span className="pacifico">/</span>&gt;</span> <span><span className="bold">Frontend</span> Simplified</span></h4>
+                  <ul>
+                    <li className="experience__title">Front-End Developer Intern</li>
+                    <li className="experience__technologies"><span className="experience__technologies--title">Technologies:</span> HTML, CSS, JS, React.js</li>
+                    <li className="experience__date">Sep 2022 - Feb 2023</li>
+                  </ul>
+                </li>
+              </div>
+              <div className="experience__wrapper">
+                <li className="experience">
+                  <div id="prcSaltillo" className="experience__company open-sans"><img id="prcSaltillo__logo" src="./images/PRC-Saltillo_Logo-modified.png" alt="logo" />prc-saltillo</div>
+                  <ul>
+                    <li className="experience__title">Full-Stack Developer Intern</li>
+                    <li className="experience__technologies"><span className="experience__technologies--title">Technologies:</span> HTML, Tailwind, JS, Vue.js, PHP, Laravel</li>
+                    <li className="experience__date">Jul 2023 - Aug 2023</li>
+                  </ul>
+                </li>
+              </div>
+              <div className="experience__wrapper">
+                <li className="experience">
+                <div id="codehouseSolutions" className="experience__company poppins"><img id="codehouse__logo" src="./images/Code_House_Solutions_Logo.jpg" alt="logo" />CODEHOUSE SOLUTIONS</div>
+                  <ul>
+                    <li className="experience__title">Full-Stack Developer Intern</li>
+                    <li className="experience__technologies"><span className="experience__technologies--title">Technologies:</span> HTML, Tailwind, TS, React.js, Next.js, AWS</li>
+                    <li className="experience__date">Jun 2023 - Current</li>
+                  </ul>
+                </li>
+              </div>
+              <div className="experience__list--triangle"></div>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section id="projects">
         <div className="container">
           <div className="row">
             <h1 className="section__title">
-              Here are some of my <span className="purple">projects</span>
+              Personal <span className="purple">Projects</span>
             </h1>
             <ul className="project__list">
               <li className="project">
