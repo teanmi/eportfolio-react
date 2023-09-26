@@ -13,6 +13,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const contact = (event) => {
@@ -66,58 +69,82 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
   return (
     <div id="body" onMouseMove={(event) => moveBackground(event)}>
       <a href="#landing-page">
-        <button className="mail__btn click" onClick={() => toggleModal()}>
-          <FontAwesomeIcon icon={faEnvelope} />
-        </button>
+        <div className="mail__btn--wrapper">
+          <button
+            className="mail__btn click"
+            data-aos="zoom-in-left"
+            data-aos-offset="0"
+            data-aos-duration="700"
+            onClick={() => toggleModal()}
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </button>
+        </div>
       </a>
       <section id="landing-page">
         <nav>
-          <h2 className="logo">M|T</h2>
-          <ul className="nav__link--list">
-            <li className="nav__link">
-              <a
-                href="#"
-                onClick={() => toggleModal()}
-                className="nav__link--anchor link__hover-effect link__hover-effect--black click"
+          <div
+            className="nav__container"
+            data-aos="fade-down"
+            data-aos-duration="700"
+            data-aos-delay="0"
+          >
+            <h2 className="logo">M|T</h2>
+            <ul className="nav__link--list">
+              <li className="nav__link">
+                <a
+                  href="#experience"
+                  className="nav__link--anchor link__hover-effect link__hover-effect--black click"
+                >
+                  Experience
+                </a>
+              </li>
+              <li className="nav__link">
+                <a
+                  href="#projects"
+                  className="nav__link--anchor link__hover-effect link__hover-effect--black click"
+                >
+                  Projects
+                </a>
+              </li>
+              <li className="nav__link">
+                <a
+                  href="#"
+                  onClick={() => toggleModal()}
+                  className="nav__link--anchor link__hover-effect link__hover-effect--black click"
+                >
+                  Contact
+                </a>
+              </li>
+              <li
+                className="nav__link click dark-mode--btn"
+                onClick={() => toggleContrast()}
               >
-                About
-              </a>
-            </li>
-            <li className="nav__link">
-              <a
-                href="#projects"
-                className="nav__link--anchor link__hover-effect link__hover-effect--black click"
-              >
-                Projects
-              </a>
-            </li>
-            <li className="nav__link">
-              <a
-                href="#"
-                onClick={() => toggleModal()}
-                className="nav__link--anchor link__hover-effect link__hover-effect--black click"
-              >
-                Contact
-              </a>
-            </li>
-            <li
-              className="nav__link click dark-mode--btn"
-              onClick={() => toggleContrast()}
-            >
-              <a
-                href="#"
-                className="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >
-                <FontAwesomeIcon icon={faCircleHalfStroke} />
-              </a>
-            </li>
-          </ul>
+                <a
+                  href="#"
+                  className="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >
+                  <FontAwesomeIcon icon={faCircleHalfStroke} />
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <header className="header">
-          <div className="header__content">
+          <div
+            className="header__content"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
             <h1 className="title">Hey</h1>
             <h1 className="title second--title purple">I'm Michael.</h1>
             <p className="header__para">
@@ -148,7 +175,7 @@ function App() {
 
               <a
                 target="_blank"
-                href="../images/MTELAKOWICZ_RESUME.pdf"
+                href="../images/MTELAKOWICZ_RESUME_ONLINE.pdf"
                 className="about-me__link click"
               >
                 <FontAwesomeIcon icon={faFilePdf} />
@@ -158,7 +185,13 @@ function App() {
         </header>
 
         <a href="#projects" className="scroll">
-          <div className="scroll__icon click"></div>
+          <div
+            className="scroll__icon click"
+            data-aos="zoom-in-up"
+            data-aos-offset="0"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          ></div>
         </a>
         <div className="modal">
           <div className="modal__half modal__about">
@@ -283,47 +316,65 @@ function App() {
             </div>
           </div>
         </div>
-        <img src="./images/semi circle.svg" className="shape shape--0" />
-        <img src="./images/circle.svg" className="shape shape--1" />
-        <img src="./images/squiggly.svg" className="shape shape--2" />
-        <img src="./images/circle.svg" className="shape shape--3" />
-        <img src="./images/triangle.svg" className="shape shape--4" />
-        <img src="./images/circle.svg" className="shape shape--5" />
-        <img src="./images/squiggly.svg" className="shape shape--6" />
-        <img src="./images/circle.svg" className="shape shape--7" />
-        <img src="./images/semi circle.svg" className="shape shape--8" />
+        <div
+          className="shapes__wrapper"
+          data-aos="fade"
+          data-aos-delay="300"
+          data-aos-duration="400"
+        >
+          <img src="./images/semi circle.svg" className="shape shape--0" />
+          <img src="./images/circle.svg" className="shape shape--1" />
+          <img src="./images/squiggly.svg" className="shape shape--2" />
+          <img src="./images/circle.svg" className="shape shape--3" />
+          <img src="./images/triangle.svg" className="shape shape--4" />
+          <img src="./images/circle.svg" className="shape shape--5" />
+          <img src="./images/squiggly.svg" className="shape shape--6" />
+          <img src="./images/circle.svg" className="shape shape--7" />
+          <img src="./images/semi circle.svg" className="shape shape--8" />
+        </div>
       </section>
       <section id="experience">
         <div className="container">
           <div className="row">
-            <h1 className="section__title">
+            <h1
+              className="section__title"
+              data-aos="fade"
+              data-aos-duration="700"
+              data-aos-offset="50"
+            >
               Professional <span className="purple">Experience</span>
             </h1>
-            <ul className="experience__list">
+            <ul
+              className="experience__list"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+            >
               <div className="experience__wrapper">
+                <div className="experience__list--triangle"></div>
+
                 <li className="experience">
-                  <h4
-                    id="frontendSimplified"
-                    className="experience__company open-sans"
+                  <div
+                    id="codehouseSolutions"
+                    className="experience__company poppins"
                   >
-                    <span className="lilita">
-                      &lt;<span className="pacifico">/</span>&gt;
-                    </span>{" "}
-                    <span>
-                      <span className="bold">Frontend</span> Simplified
-                    </span>
-                  </h4>
+                    <img
+                      id="codehouse__logo"
+                      src="./images/Code_House_Solutions_Logo.jpg"
+                      alt="logo"
+                    />
+                    CODEHOUSE SOLUTIONS
+                  </div>
                   <ul>
                     <li className="experience__title">
-                      Front-End Developer Intern
+                      Full-Stack Developer Intern
                     </li>
                     <li className="experience__technologies">
                       <span className="experience__technologies--title">
                         Technologies:
                       </span>{" "}
-                      HTML, CSS, JS, React.js
+                      HTML, Tailwind, TS, React.js, Next.js, AWS
                     </li>
-                    <li className="experience__date">Sep 2022 - Feb 2023</li>
+                    <li className="experience__date">Jun 2023 - Current</li>
                   </ul>
                 </li>
               </div>
@@ -356,32 +407,31 @@ function App() {
               </div>
               <div className="experience__wrapper">
                 <li className="experience">
-                  <div
-                    id="codehouseSolutions"
-                    className="experience__company poppins"
+                  <h4
+                    id="frontendSimplified"
+                    className="experience__company open-sans"
                   >
-                    <img
-                      id="codehouse__logo"
-                      src="./images/Code_House_Solutions_Logo.jpg"
-                      alt="logo"
-                    />
-                    CODEHOUSE SOLUTIONS
-                  </div>
+                    <span className="lilita">
+                      &lt;<span className="pacifico">/</span>&gt;
+                    </span>{" "}
+                    <span>
+                      <span className="bold">Frontend</span> Simplified
+                    </span>
+                  </h4>
                   <ul>
                     <li className="experience__title">
-                      Full-Stack Developer Intern
+                      Front-End Developer Intern
                     </li>
                     <li className="experience__technologies">
                       <span className="experience__technologies--title">
                         Technologies:
                       </span>{" "}
-                      HTML, Tailwind, TS, React.js, Next.js, AWS
+                      HTML, CSS, JS, React.js
                     </li>
-                    <li className="experience__date">Jun 2023 - Current</li>
+                    <li className="experience__date">Sep 2022 - Feb 2023</li>
                   </ul>
                 </li>
               </div>
-              <div className="experience__list--triangle"></div>
             </ul>
           </div>
         </div>
@@ -389,12 +439,22 @@ function App() {
       <section id="projects">
         <div className="container">
           <div className="row">
-            <h1 className="section__title">
+            <h1
+              className="section__title"
+              data-aos="fade"
+              data-aos-duration="700"
+              data-aos-offset="50"
+            >
               Personal <span className="purple">Projects</span>
             </h1>
             <ul className="project__list">
               <li className="project">
-                <div className="project__wrapper project__wrapper--space-model">
+                <div
+                  className="project__wrapper project__wrapper--space-model"
+                  data-aos="zoom-in"
+                  data-aos-duration="600"
+                  data-aos-anchor-placement="top-center"
+                >
                   <img
                     src="./images/space-model.png"
                     className="project__mockup"
@@ -434,7 +494,12 @@ function App() {
                 </div>
               </li>
               <li className="project">
-                <div className="project__wrapper">
+                <div
+                  className="project__wrapper"
+                  data-aos="zoom-in"
+                  data-aos-duration="600"
+                  data-aos-anchor-placement="top-center"
+                >
                   <img
                     src="./images/gamemart.png"
                     className="project__mockup"
@@ -475,7 +540,12 @@ function App() {
                 </div>
               </li>
               <li className="project">
-                <div className="project__wrapper project__wrapper--twitter">
+                <div
+                  className="project__wrapper project__wrapper--twitter"
+                  data-aos="zoom-in"
+                  data-aos-duration="600"
+                  data-aos-anchor-placement="top-center"
+                >
                   <img
                     src="./images/twitter.png"
                     className="project__mockup"
@@ -515,7 +585,12 @@ function App() {
                 </div>
               </li>
               <li className="project">
-                <div className="project__wrapper">
+                <div
+                  className="project__wrapper"
+                  data-aos="zoom-in"
+                  data-aos-duration="600"
+                  data-aos-anchor-placement="top-center"
+                >
                   <img
                     src="./images/linkedin.png"
                     className="project__mockup"
@@ -559,7 +634,12 @@ function App() {
                 </div>
               </li>
               <li className="project">
-                <div className="project__wrapper">
+                <div
+                  className="project__wrapper"
+                  data-aos="zoom-in"
+                  data-aos-duration="600"
+                  data-aos-anchor-placement="top-center"
+                >
                   <img
                     src="./images/google.png"
                     className="project__mockup"
@@ -601,7 +681,12 @@ function App() {
                 </div>
               </li>
               <li className="project">
-                <div className="project__wrapper">
+                <div
+                  className="project__wrapper"
+                  data-aos="zoom-in"
+                  data-aos-duration="600"
+                  data-aos-anchor-placement="top-center"
+                >
                   <img
                     src="./images/wordsearch.png"
                     className="project__mockup"
@@ -673,7 +758,7 @@ function App() {
 
               <a
                 target="_blank"
-                href="../images/MTELAKOWICZ_RESUME.pdf"
+                href="../images/MTELAKOWICZ_RESUME_ONLINE.pdf"
                 className="footer__social--link link__hover-effect link__hover-effect--white"
               >
                 Resume
