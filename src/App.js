@@ -372,9 +372,9 @@ function App() {
                       <span className="experience__technologies--title">
                         Technologies:
                       </span>{" "}
-                      HTML, Tailwind, TS, React.js, Next.js, AWS
+                      HTML, Tailwind, TypeScript, React.js, Next.js, AWS
                     </li>
-                    <li className="experience__date">Jun 2023 - Current</li>
+                    <li className="experience__date">Jun 2023 - Sep 2023</li>
                   </ul>
                 </li>
               </div>
@@ -399,7 +399,7 @@ function App() {
                       <span className="experience__technologies--title">
                         Technologies:
                       </span>{" "}
-                      HTML, Tailwind, JS, Vue.js, PHP, Laravel
+                      HTML, Tailwind, JavaScript, Vue.js, PHP, Laravel
                     </li>
                     <li className="experience__date">Jul 2023 - Aug 2023</li>
                   </ul>
@@ -426,7 +426,7 @@ function App() {
                       <span className="experience__technologies--title">
                         Technologies:
                       </span>{" "}
-                      HTML, CSS, JS, React.js
+                      HTML, CSS, JavaScript, React.js
                     </li>
                     <li className="experience__date">Sep 2022 - Feb 2023</li>
                   </ul>
