@@ -175,7 +175,7 @@ function App() {
 
               <a
                 target="_blank"
-                href="../images/MTELAKOWICZ_RESUME_ONLINE.pdf"
+                href="../images/MichaelTelakowiczResume.pdf"
                 className="about-me__link click"
               >
                 <FontAwesomeIcon icon={faFilePdf} />
@@ -758,7 +758,7 @@ function App() {
 
               <a
                 target="_blank"
-                href="../images/MTELAKOWICZ_RESUME_ONLINE.pdf"
+                href="../images/MichaelTelakowiczResume.pdf"
                 className="footer__social--link link__hover-effect link__hover-effect--white"
               >
                 Resume
