@@ -199,15 +199,14 @@ function App() {
               Here's a bit about me.
             </h3>
             <h4 className="modal__sub-title modal__sub-title--about">
-              Full-Stack Software Engineer
+              Full-Stack Developer
             </h4>
             <p className="modal__para">
               I'm a <span className="purple">full-stack developer</span> with a
               strong desire to contiue learning more in the field.
               <br />
               I'm currently in college at the{" "}
-              <span className="purple">University of Akron</span> while working
-              part-time as a full-stack developer. Everyday I am continuing to
+              <span className="purple">University of Akron</span> working towards a bachelors in <span className="purple">computer science.</span> Everyday I am continuing to
               learn and grow as a <span className="purple">developer</span>.
             </p>
             <div className="modal__languages">
@@ -366,7 +365,7 @@ function App() {
                   </div>
                   <ul>
                     <li className="experience__title">
-                      Full-Stack Developer Intern
+                      Software Engineer Intern
                     </li>
                     <li className="experience__technologies">
                       <span className="experience__technologies--title">
@@ -374,7 +373,7 @@ function App() {
                       </span>{" "}
                       HTML, Tailwind, TypeScript, React.js, Next.js, AWS
                     </li>
-                    <li className="experience__date">Jun 2023 - Sep 2023</li>
+                    <li className="experience__date">Jun 2023 - Sept 2023</li>
                   </ul>
                 </li>
               </div>
@@ -389,11 +388,11 @@ function App() {
                       src="./images/PRC-Saltillo_Logo-modified.png"
                       alt="logo"
                     />
-                    prc-saltillo
+                    PRC-Saltillo
                   </div>
                   <ul>
                     <li className="experience__title">
-                      Full-Stack Developer Intern
+                      Software Engineer Intern
                     </li>
                     <li className="experience__technologies">
                       <span className="experience__technologies--title">
@@ -401,7 +400,7 @@ function App() {
                       </span>{" "}
                       HTML, Tailwind, JavaScript, Vue.js, PHP, Laravel
                     </li>
-                    <li className="experience__date">Jul 2023 - Aug 2023</li>
+                    <li className="experience__date">Jul 2023 - Sept 2023</li>
                   </ul>
                 </li>
               </div>
@@ -428,7 +427,7 @@ function App() {
                       </span>{" "}
                       HTML, CSS, JavaScript, React.js
                     </li>
-                    <li className="experience__date">Sep 2022 - Feb 2023</li>
+                    <li className="experience__date">Sept 2022 - Feb 2023</li>
                   </ul>
                 </li>
               </div>
