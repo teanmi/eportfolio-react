@@ -22,7 +22,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "git switch gh-pages && npm run build && git add build/\\* && git commit -m 'deploy' && git push origin gh-pages",
+    "deploy": "gh-pages -d build",
+    "postdeploy": "git switch main"
   },
   "eslintConfig": {
     "extends": [
