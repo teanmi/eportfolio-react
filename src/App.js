@@ -45,8 +45,14 @@ function App() {
       });
   };
 
-  const toggleModal = () => {
-    document.getElementById("body").classList.toggle("modal--open");
+  const openModal = () => {
+    document.getElementById("body").classList.add("modal--open");
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    document.getElementById("body").classList.remove("modal--open");
+    document.body.style.overflow = '';
   };
 
   const toggleContrast = () => {
@@ -84,7 +90,7 @@ function App() {
             data-aos="zoom-in-left"
             data-aos-offset="0"
             data-aos-duration="700"
-            onClick={() => toggleModal()}
+            onClick={() => openModal()}
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </button>
@@ -119,7 +125,7 @@ function App() {
               <li className="nav__link">
                 <a
                   href="#"
-                  onClick={() => toggleModal()}
+                  onClick={() => openModal()}
                   className="nav__link--anchor link__hover-effect link__hover-effect--black click"
                 >
                   Contact
@@ -153,7 +159,7 @@ function App() {
               positive user experience.
               <br />
               Here is some more
-              <span className="purple ml4 click" onClick={() => toggleModal()}>
+              <span className="purple ml4 click" onClick={() => openModal()}>
                 about me.
               </span>
             </p>
@@ -263,7 +269,7 @@ function App() {
             <FontAwesomeIcon
               icon={faTimes}
               className="click modal__exit"
-              onClick={() => toggleModal()}
+              onClick={() => closeModal()}
             />
 
             <h3 className="modal__title modal__title--contact">
@@ -798,7 +804,7 @@ function App() {
               </a>
               <a
                 href="#"
-                onClick={() => toggleModal()}
+                onClick={() => openModal()}
                 className="footer__social--link link__hover-effect link__hover-effect--white"
               >
                 Contact
