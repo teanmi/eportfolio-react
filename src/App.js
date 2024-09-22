@@ -159,7 +159,7 @@ function App() {
             </p>
             <div className="about-me__links">
               <a
-                href="https://www.linkedin.com/in/michael-telakowicz-0a1189222/"
+                href="https://www.linkedin.com/in/michael-telakowicz/"
                 target="_blank"
                 className="about-me__link click"
               >
@@ -206,8 +206,11 @@ function App() {
               strong desire to contiue learning more in the field.
               <br />
               I'm currently in college at the{" "}
-              <span className="purple">University of Akron</span> working towards a bachelors in <span className="purple">computer science.</span> Everyday I am continuing to
-              learn and grow as a <span className="purple">developer</span>.
+              <span className="purple">University of Akron</span> working
+              towards a bachelors in{" "}
+              <span className="purple">computer science.</span> Everyday I am
+              continuing to learn and grow as a{" "}
+              <span className="purple">developer</span>.
             </p>
             <div className="modal__languages">
               <figure className="modal__language">
@@ -350,7 +353,56 @@ function App() {
             >
               <div className="experience__wrapper">
                 <div className="experience__list--triangle"></div>
-
+                <li className="experience">
+                  <div id="uakron" className="experience__company open-sans">
+                    <div>
+                      <img
+                        id="uakron__logo"
+                        src="./images/UAkron.png"
+                        alt="University of Akron logo"
+                      />
+                      University of Akron{" "}
+                    </div>
+                    <p>College of Business</p>
+                  </div>
+                  <ul>
+                    <li className="experience__title">Web Developer</li>
+                    <li className="experience__technologies">
+                      <span className="experience__technologies--title">
+                        Technologies:
+                      </span>{" "}
+                      HTML, Bootstrap, CSS, Photoshop
+                    </li>
+                    <li className="experience__date">Mar 2024 - Current</li>
+                  </ul>
+                </li>
+              </div>
+              <div className="experience__wrapper">
+                <li className="experience">
+                  <div className="prcSaltillo experience__company open-sans">
+                    <img
+                      className="prcSaltillo__logo"
+                      src="./images/PRC-Saltillo_Logo-modified.png"
+                      alt="logo"
+                    />
+                    PRC-Saltillo
+                  </div>
+                  <ul>
+                    <li className="experience__title">
+                      Software Engineer Intern
+                    </li>
+                    <li className="experience__technologies">
+                      <span className="experience__technologies--title">
+                        Technologies:
+                      </span>{" "}
+                      HTML, Tailwind, JavaScript, Vue.js, PHP, Laravel, SQL,
+                      Docker
+                    </li>
+                    <li className="experience__date">May 2024 - Aug 2024</li>
+                  </ul>
+                </li>
+              </div>
+              <div className="experience__wrapper">
                 <li className="experience">
                   <div
                     id="codehouseSolutions"
@@ -379,12 +431,9 @@ function App() {
               </div>
               <div className="experience__wrapper">
                 <li className="experience">
-                  <div
-                    id="prcSaltillo"
-                    className="experience__company open-sans"
-                  >
+                  <div className="prcSaltillo experience__company open-sans">
                     <img
-                      id="prcSaltillo__logo"
+                      className="prcSaltillo__logo"
                       src="./images/PRC-Saltillo_Logo-modified.png"
                       alt="logo"
                     />
@@ -398,7 +447,7 @@ function App() {
                       <span className="experience__technologies--title">
                         Technologies:
                       </span>{" "}
-                      HTML, Tailwind, JavaScript, Vue.js, PHP, Laravel
+                      HTML, Tailwind, JavaScript, Vue.js, PHP, Laravel, SQL
                     </li>
                     <li className="experience__date">Jul 2023 - Sept 2023</li>
                   </ul>
@@ -741,7 +790,7 @@ function App() {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/michael-telakowicz-0a1189222/"
+                href="https://www.linkedin.com/in/michael-telakowicz/"
                 target="_blank"
                 className="footer__social--link link__hover-effect link__hover-effect--white"
               >

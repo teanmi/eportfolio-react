@@ -720,14 +720,36 @@ li {
   margin-right: 8px;
 }
 
-#prcSaltillo {
+#uakron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#uakron__logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 3px;
+}
+
+.experience__company div {
+  display: flex;
+  align-items: center;
+}
+
+.experience__company p {
+  font-size: 18px;
+}
+
+.prcSaltillo {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #777777;
 }
 
-#prcSaltillo__logo {
+.prcSaltillo__logo {
   width: 24px;
   height: 24px;
   margin-right: 3px;
@@ -807,6 +829,7 @@ li {
   }
 
   .experience__wrapper:nth-child(even)::before {
+    left: auto;
     right: -5px;
   }
 
@@ -1054,7 +1077,7 @@ footer {
     font-size: 22px;
   }
 
-  #prcSaltillo__logo {
+  .prcSaltillo__logo {
     width: 20px;
     height: 20px;
   }
@@ -1124,7 +1147,7 @@ footer {
     font-size: 19px;
   }
 
-  #prcSaltillo__logo {
+  .prcSaltillo__logo {
     width: 18px;
     height: 18px;
   }
