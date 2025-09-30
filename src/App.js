@@ -360,6 +360,29 @@ function App() {
               <div className="experience__wrapper">
                 <div className="experience__list--triangle"></div>
                 <li className="experience">
+                  <div className="prcSaltillo experience__company open-sans">
+                    <img
+                      className="prcSaltillo__logo"
+                      src="./images/PRC-Saltillo_Logo-modified.png"
+                      alt="logo"
+                    />
+                    PRC-Saltillo
+                  </div>
+                  <ul>
+                    <li className="experience__title">Junior Web Developer</li>
+                    <li className="experience__technologies">
+                      <span className="experience__technologies--title">
+                        Technologies:
+                      </span>{" "}
+                      HTML, Tailwind, JavaScript, Vue.js, PHP, Laravel, SQL, Docker
+                    </li>
+                    <li className="experience__date">May 2025 - Current</li>
+                  </ul>
+                </li>
+              </div>
+              <div className="experience__wrapper">
+                <div className="experience__list--triangle"></div>
+                <li className="experience">
                   <div id="uakron" className="experience__company open-sans">
                     <div>
                       <img
@@ -395,7 +418,7 @@ function App() {
                   </div>
                   <ul>
                     <li className="experience__title">
-                      Software Engineer Intern
+                      Web Developer Intern
                     </li>
                     <li className="experience__technologies">
                       <span className="experience__technologies--title">
@@ -447,7 +470,7 @@ function App() {
                   </div>
                   <ul>
                     <li className="experience__title">
-                      Software Engineer Intern
+                      Web Developer Intern
                     </li>
                     <li className="experience__technologies">
                       <span className="experience__technologies--title">
